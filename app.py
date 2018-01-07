@@ -378,25 +378,17 @@ def handle_message(event):
                         text='抽卡片'                    
                     ),
                     MessageTemplateAction(
-                        label='施工中',
-                        text='施工中'
-                    ),
-                    MessageTemplateAction(
-                        label='施工中2',
-                        text='施工中2'
-                    ),
-                    MessageTemplateAction(
-                        label='施工中3',
-                        text='施工中3'
+                        label='吃什麼',
+                        text='吃什麼'
                     )
                 ]
             )
         )
         line_bot_api.reply_message(event.reply_token, buttons_template)
         return 0
-    if event.message.text == "施工中":
+    if event.message.text == "新聞":
         buttons_template = TemplateSendMessage(
-            alt_text='施工中 template',
+            alt_text='新聞 template',
             template=ButtonsTemplate(
                 title='新聞類型',
                 text='請選擇',
@@ -419,9 +411,9 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, buttons_template)
         return 0
-    if event.message.text == "施工中2":
+    if event.message.text == "電影":
         buttons_template = TemplateSendMessage(
-            alt_text='施工中2 template',
+            alt_text='電影 template',
             template=ButtonsTemplate(
                 title='服務類型',
                 text='請選擇',
@@ -440,9 +432,9 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, buttons_template)
         return 0
-    if event.message.text == "施工中3":
+    if event.message.text == "看廢文":
         buttons_template = TemplateSendMessage(
-            alt_text='施工中3 template',
+            alt_text='看廢文 template',
             template=ButtonsTemplate(
                 title='你媽知道你在看廢文嗎',
                 text='請選擇',
