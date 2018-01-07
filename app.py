@@ -316,7 +316,7 @@ def handle_message(event):
     if event.message.text == "花費250石":
         client = ImgurClient(client_id, client_secret)
         images = client.get_album_images(album_id)
-        index = random.randint(0, len(images) - 1)
+        index = random.randint(1, len(images) - 10)
         url = images[index].link
         image_message = ImageSendMessage(
             original_content_url=url,
@@ -446,8 +446,7 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='即時廢文',
-                        text='即時廢文'
-                                          
+                        text='即時廢文'                   
                     ),
                     MessageTemplateAction(
                         label='PTT 表特版 近期大於 10 推的文章',
@@ -473,7 +472,6 @@ def handle_message(event):
                     MessageTemplateAction(
                         label='抽一次',
                         text='花費250石'
-
                     )
                 ]
             )
