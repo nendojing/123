@@ -463,7 +463,6 @@ def handle_message(event):
                     MessageTemplateAction(
                         label='來張 imgur 正妹圖片',
                         text='來張 imgur 正妹圖片'
-                    ),
                     )
                 ]
             )
