@@ -374,10 +374,6 @@ def handle_message(event):
                 thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
                     MessageTemplateAction(
-                        label='抽卡片',
-                        text='抽卡片'                    
-                    ),
-                    MessageTemplateAction(
                         label='新聞',
                         text='新聞'                    
                     ),
@@ -387,7 +383,11 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='看廢文',
-                        text='看廢文'
+                        text='看廢文'                    
+                    ),
+                    MessageTemplateAction(
+                        label='抽卡片',
+                        text='抽卡片'
                     )
                 ]
             )
