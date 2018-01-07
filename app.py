@@ -490,25 +490,25 @@ def handle_message(event):
     buttons_template = TemplateSendMessage(
         alt_text='目錄 template',
         template=ButtonsTemplate(
-            title='選擇服務',
-            text='請選擇',
-            thumbnail_image_url='https://i.imgur.com/kzi5kKy.jpg',
+            title='千川ちひろ',
+            text='製作人您好，有需要什麼服務嗎？',
+            thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
             actions=[
                 MessageTemplateAction(
-                    label='開始玩',
-                    text='開始玩'
+                    label='開始遊玩',
+                    text='開始遊玩'
                 ),
                 URITemplateAction(
-                    label='影片介紹 阿肥bot',
-                    uri='https://youtu.be/1IxtWgWxtlE'
+                    label='觀賞MV',
+                    uri='https://www.youtube.com/watch?v=943GdzrWIU4'
                 ),
                 URITemplateAction(
-                    label='如何建立自己的 Line Bot',
-                    uri='https://github.com/twtrubiks/line-bot-tutorial'
+                    label='角色排行',
+                    uri='https://odenpa.com/sgsort/'
                 ),
                 URITemplateAction(
-                    label='聯絡作者',
-                    uri='https://www.facebook.com/TWTRubiks?ref=bookmarks'
+                    label='偶像一覽',
+                    uri='http://imas.gamedbs.jp/cg/'
                 )
             ]
         )
