@@ -316,7 +316,7 @@ def handle_message(event):
     if event.message.text == "花費250石":
         client = ImgurClient(client_id, client_secret)
         images = client.get_album_images(album_id)
-        index = random.randint(1, len(images) - 10)
+        index = random.randint(0, len(images) - 1)
         url = images[index].link
         image_message = ImageSendMessage(
             original_content_url=url,
@@ -369,21 +369,21 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='開始遊玩 template',
             template=ButtonsTemplate(
-                title='要玩什麼呢',
-                text='目前只能抽卡喔',
+                title='有需要什麼服務嗎？',
+                text='請選擇',
                 thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
                     MessageTemplateAction(
                         label='新聞',
-                        text='新聞'                    
+                        text='新聞'
                     ),
                     MessageTemplateAction(
                         label='電影',
-                        text='電影'                    
+                        text='電影'
                     ),
                     MessageTemplateAction(
                         label='看廢文',
-                        text='看廢文'                    
+                        text='看廢文'
                     ),
                     MessageTemplateAction(
                         label='抽卡片',
@@ -412,7 +412,7 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='PanX泛科技',
-                        text='PanX泛科技
+                        text='PanX泛科技'
                     )
                 ]
             )
@@ -454,15 +454,16 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='即時廢文',
-                        text='即時廢文'                   
+                        text='即時廢文'                    
                     ),
                     MessageTemplateAction(
                         label='PTT 表特版 近期大於 10 推的文章',
-                        text='PTT 表特版 近期大於 10 推的文章'                
+                        text='PTT 表特版 近期大於 10 推的文章'
                     ),
                     MessageTemplateAction(
-                        label='隨便來張正妹圖片',
-                        text='隨便來張正妹圖片'
+                        label='來張 imgur 正妹圖片',
+                        text='來張 imgur 正妹圖片'
+                    ),
                     )
                 ]
             )
