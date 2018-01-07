@@ -413,7 +413,6 @@ def handle_message(event):
                     MessageTemplateAction(
                         label='看廢文',
                         text='看廢文'
-                    ),
                     )
                 ]
             )
