@@ -316,7 +316,7 @@ def handle_message(event):
     if event.message.text == "花費2500石":
         client = ImgurClient(client_id, client_secret)
         images = client.get_album_images(album_id)
-        index = random.randint((1,11) len(images) - 10)
+        index = random.randint((1,11) len(images) - (10))
         url = images[index].link
         image_message = ImageSendMessage(
             original_content_url=url,
