@@ -365,12 +365,12 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text=content))
         return 0
-    if event.message.text == "開始玩":
+    if event.message.text == "開始遊玩":
         buttons_template = TemplateSendMessage(
-            alt_text='開始玩 template',
+            alt_text='開始遊玩 template',
             template=ButtonsTemplate(
-                title='選擇服務',
-                text='請選擇',
+                title='要玩什麼呢',
+                text='我想想',
                 thumbnail_image_url='https://i.imgur.com/xQF5dZT.jpg',
                 actions=[
                     MessageTemplateAction(
