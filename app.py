@@ -374,18 +374,6 @@ def handle_message(event):
                 thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
                     MessageTemplateAction(
-                        label='新聞',
-                        text='新聞'
-                    ),
-                    MessageTemplateAction(
-                        label='電影',
-                        text='電影'
-                    ),
-                    MessageTemplateAction(
-                        label='看廢文',
-                        text='看廢文'
-                    ),
-                    MessageTemplateAction(
                         label='抽卡片',
                         text='抽卡片'
                     )
@@ -412,7 +400,20 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='PanX泛科技',
-                        text='PanX泛科技'
+                        text='PanX泛科技
+                    ),
+                    MessageTemplateAction(
+                        label='新聞',
+                        text='新聞'
+                    ),
+                    MessageTemplateAction(
+                        label='電影',
+                        text='電影'
+                    ),
+                    MessageTemplateAction(
+                        label='看廢文',
+                        text='看廢文'
+                    ),
                     )
                 ]
             )
