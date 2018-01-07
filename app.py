@@ -369,22 +369,10 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='開始遊玩 template',
             template=ButtonsTemplate(
-                title='有需要什麼服務嗎？',
-                text='請選擇',
+                title='想要玩什麼呢？',
+                text='目前只能抽卡片喔',
                 thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
-                    MessageTemplateAction(
-                        label='新聞',
-                        text='新聞'
-                    ),
-                    MessageTemplateAction(
-                        label='電影',
-                        text='電影'
-                    ),
-                    MessageTemplateAction(
-                        label='看廢文',
-                        text='看廢文'
-                    ),
                     MessageTemplateAction(
                         label='抽卡片',
                         text='抽卡片'
