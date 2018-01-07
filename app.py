@@ -378,8 +378,16 @@ def handle_message(event):
                         text='抽卡片'                    
                     ),
                     MessageTemplateAction(
-                        label='吃什麼',
-                        text='吃什麼'
+                        label='新聞',
+                        text='新聞'                    
+                    ),
+                    MessageTemplateAction(
+                        label='電影',
+                        text='電影'                    
+                    ),
+                    MessageTemplateAction(
+                        label='看廢文',
+                        text='看廢文'
                     )
                 ]
             )
