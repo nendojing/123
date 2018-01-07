@@ -313,10 +313,10 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text=content))
         return 0
-    if event.message.text == "花費2500石":
+    if event.message.text == "花費250石":
         client = ImgurClient(client_id, client_secret)
         images = client.get_album_images(album_id)
-        index = random.randint((1,11) len(images) - (10))
+        index = random.randint(0, len(images) - 1)
         url = images[index].link
         image_message = ImageSendMessage(
             original_content_url=url,
@@ -370,7 +370,7 @@ def handle_message(event):
             alt_text='開始遊玩 template',
             template=ButtonsTemplate(
                 title='要玩什麼呢',
-                text='有以下幾個項目可以選',
+                text='目前只能抽卡喔',
                 thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
                     MessageTemplateAction(
@@ -479,8 +479,8 @@ def handle_message(event):
                 thumbnail_image_url='https://i.imgur.com/Plu4a2J.jpg',
                 actions=[
                     MessageTemplateAction(
-                        label='抽十連',
-                        text='花費2500石'
+                        label='抽一次',
+                        text='花費250石'
 
                     )
                 ]
