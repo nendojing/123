@@ -370,8 +370,8 @@ def handle_message(event):
             alt_text='開始遊玩 template',
             template=ButtonsTemplate(
                 title='要玩什麼呢',
-                text='我想想',
-                thumbnail_image_url='https://i.imgur.com/xQF5dZT.jpg',
+                text='有以下幾個項目可以選',
+                thumbnail_image_url='https://i.imgur.com/HZk1Aad.jpg',
                 actions=[
                     MessageTemplateAction(
                         label='新聞',
@@ -386,8 +386,8 @@ def handle_message(event):
                         text='看廢文'
                     ),
                     MessageTemplateAction(
-                        label='正妹',
-                        text='正妹'
+                        label='抽卡片',
+                        text='抽卡片'
                     )
                 ]
             )
